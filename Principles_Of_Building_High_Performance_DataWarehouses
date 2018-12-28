@@ -1,0 +1,7 @@
+From http://db.csail.mit.edu/madden/high_perf.pdf --
+
+1) Use a shared-nothing architecture. Anything else will be much less scalable.
+2) Build your architecture from commodity parts. There is no reason why the cost of a grid should exceed $700 per (CPU, disk) pair. If you are paying more, then you are offering a vendor a guided tour through your wallet.
+3) Get a DBMS with compression. This is a good idea today, and will become an even better idea tomorrow. It offers about a factor of three performance improvement.
+4) Use a column-store database. These are 10 to 100 times faster than a row-store database on star-schema warehouse queries.
+5) Make sure your column-store database has an executor that runs on compressed data. Otherwise, your CPU costs can be an order of magnitude or more higher than in a traditional database.
