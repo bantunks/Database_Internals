@@ -1,0 +1,12 @@
+# Database_Internals
+Notes on databases internals
+
+MongoDB Internals --
+https://www.youtube.com/watch?v=bLTNAsrWzOI
+https://www.mongodb.com/presentations/query-engine-life-read
+
+The Future of SQL: Databases Meet Stream Processing --
+https://www.confluent.io/blog/databases-meet-stream-processing-the-future-of-sql/
+
+4 Key Design Principles and Guarantees of Streaming Databases --
+https://www.confluent.io/blog/streaming-database-design-principles-and-guarantees
